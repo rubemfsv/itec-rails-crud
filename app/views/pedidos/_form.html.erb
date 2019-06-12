@@ -1,0 +1,36 @@
+<%= form_for @pedido, :html => {:class => "form-horizontal center"} do |f| %>
+<% if pedido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pedido.errors.count, "error") %> prohibited this pedido from being saved:</h2>
+
+      <ul>
+      <% pedido.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="col-sm-6 offset-sm-3">
+  <div class="info-form">
+     <form action="" class="form-inlin justify-content-center">
+        <div class="form-group">
+            <%= f.label :código, "Código:", class: "col-md-4 control-label" %>
+            <div class="col-md-12">
+              <%= f.text_field :title, class: "form-control" %>
+            </div>
+        </div>
+        <div class="form-group">
+            <%= f.label :descrição, "Descrição:", class: "col-md-4 control-label" %>
+            <div class="col-md-12">
+              <%= f.text_field :body, class: "form-control" %>
+            </div>
+        </div>
+      <div class="text-center">        
+         <button type="submit" class="btn btn-primary">Salvar Pedido</button>
+      </div>
+      </form>
+  </div>
+</div>
+
+<% end %>
