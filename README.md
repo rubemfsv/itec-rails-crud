@@ -1,24 +1,11 @@
-# README
+# Desafio ITEC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto onde se registra usuários e edita seus dados, e os usuários podem adicionar e editar pedidos com código e descrição no sistema.
+Apenas usuários cadastrados podem adicionar e editar os pedidos, porém todos podem visualizar.
 
-Things you may want to cover:
+## Tecnologias Utilizadas:
+* Ruby 2.4
+* Rails 5.0.7
+* Bootstrap 4.0. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Link do projeto no Heroku https://desafioitec.herokuapp.com
